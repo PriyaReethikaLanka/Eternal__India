@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+}
+.explore{
+    margin-top: 40%;
+    /* position: fixed;
+    left: 30%;
+    bottom: 20%; */
+}
+.bc{
+    width: 100px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.bc:hover{
+    width: 120px;
+    height: 30px;
+}
+.Heading{
+    color: white;
+    font-size: 90px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    left: 10%;
+    width: 40%;
+    /* background-image: linear-gradient(to right,orange,brown); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-clip: text; */
+    /* color: transparent; */
+    /* border: 2px solid black; */
+
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    /* background-color: red; */
+  }
+  
+  .background-video video {
+    height: 100%;
+    width: 100% !important;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.state{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url("https://curlytales.com/wp-content/uploads/2017/02/konark-24.jpg"); */
+    background-size: cover;
+    background-size: 100% 100% 100% 100%;
+    flex-direction: row;
+    /* gap: 120px; */
+    z-index: -1;
+}
+.slick_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* border: 2px solid black;  */
+    width:60%;
+    height: fit-content;
+    flex-wrap: wrap;
+    /* margin-top: 30%; */
+    /* position: fixed; */
+    /* top: 50%; */
+}
+.temple1{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.temple2{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.temple3{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.name{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+.slick-dots{
+    display: flex;
+    position: absolute;
+    /* bottom: 0px; */
+    top: 300px;
+    right: 45%;
+    gap: 30px;
+    color: white;
+}
+.slick-active{
+    color: brown;
+}
+li button{
+    display: none;
+} 
+.background-video video {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+@media screen and (max-width:1200px) {
+    .temple2{
+        margin-top: 12%;
+    }
+    .temple3{
+        margin-top: 15%;
+    }
+    .Heading{
+        font-size: 50px;
+    }
+}

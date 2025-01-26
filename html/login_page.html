@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/login_page.css" />
+  </head>
+  <body>
+    <div class="flip_card">
+      <div class="inner_card">
+        <div class="login_div">
+          <h1>Login</h1>
+          <p class="login_user_name">User Name</p>
+          <p class="login_user_input">
+            <i class="fa-solid fa-user" style="color: #b8b8b8"></i
+            ><input
+              required
+              class="user_name"
+              type="text"
+              placeholder="Enter user name or Email"
+            />
+          </p>
+          <p class="login_password">Password</p>
+          <p class="login_password_input">
+            <i class="fa-solid fa-lock" style="color: #b8b8b8"></i>
+            <input
+              required
+              class="user_password"
+              type="password"
+              placeholder="Type your password"
+            />
+            <i class="fa-solid fa-eye-slash" onclick="showpassword()"></i>
+          </p>
+          <p class="forget" onclick="forget_password()">Forget Password?</p>
+          <div class="login_btn" onclick="login()">LOGIN</div>
+          <p class="or_text">Or</p>
+          <div class="login_sign_up_btn" onclick="signup_from_login()">
+            signup
+          </div>
+          <p class="terms">
+            By creating this account, you agree to our
+            <a href="#">Privacy Policy</a> & <a href="#">Cookie Policy.</a>
+          </p>
+        </div>
+
+        <div class="signup_div">
+          <h1>Sign Up</h1>
+          <p class="signup_user_name charan">Enter your name</p>
+          <p class="signup_user_input">
+            <i class="fa-solid fa-user" style="color: #b8b8b8"></i
+            ><input
+              class="signup_name"
+              type="text"
+              placeholder="Type your name"
+              required
+            />
+          </p>
+          <p class="signip_password charan">Enter your email</p>
+          <p class="signup_password_input">
+            <i class="fa-regular fa-envelope" style="color: #b8b8b8"></i
+            ><input
+              class="signup_email"
+              type="email"
+              placeholder="Type your email"
+              required
+            />
+          </p>
+          <p class="signup_password charan">Enter new password</p>
+          <p class="signup_password_input">
+            <i class="fa-solid fa-lock" style="color: #b8b8b8"></i
+            ><input
+              class="password1"
+              type="password"
+              placeholder="Type your password"
+              required
+            />
+            <i class="fa-solid fa-eye-slash" onclick="showpassword1()"></i>
+          </p>
+          <p class="cfmpassword charan">Confirm password</p>
+          <p class="cfmpassword_input">
+            <i class="fa-solid fa-lock" style="color: #b8b8b8"></i
+            ><input
+              class="password2"
+              type="password"
+              placeholder="Re-enter your password"
+              required
+            />
+            <i class="fa-solid fa-eye-slash" onclick="showpassword2()"></i>
+          </p>
+          <div class="signup_sign_up_btn" onclick="signup()">signup</div>
+          <p class="terms">
+            By creating this account, you agree to our
+            <a href="#">Privacy Policy</a> & <a href="#">Cookie Policy.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="error_div">
+      <i class="fa-solid fa-circle-xmark" style="color: #ff0000" onclick="remove_error()"></i>
+      <p>No User Found, Please SignUp</p>
+      <div class="login_sign_up_btn" onclick="signup_from_login()">signup</div>
+    </div>
+
+    <div class="succ_login">
+      <i class="fa-solid fa-circle-check" style="color: #00ff00"></i>
+      <p>You have successfully registered. Now please Login.</p>
+      <div class="login" onclick="login_from_signup()">LOGIN</div>
+    </div>
+
+    <div class="logged">Logged In Successfully!</div>
+
+    <div class="forget_password_div">
+      <h1>Forget Password</h1>
+      <p class="forget_user_name">User Name</p>
+      <p class="forget_user_input">
+        <i class="fa-solid fa-user" style="color: #b8b8b8"></i
+        ><input
+          required
+          class="forget_input_user_name"
+          type="text"
+          placeholder="Enter user name or Email"
+        />
+      </p>
+      <p class="forget_password charan">Enter new password</p>
+      <p class="forget_password_input">
+        <i class="fa-solid fa-lock" style="color: #b8b8b8"></i
+        ><input
+          class="forget_password1"
+          type="password"
+          placeholder="Type your password"
+          required
+        />
+        <i class="fa-solid fa-eye-slash" onclick="for_showpassword1()"></i>
+      </p>
+      <p class="forget_cfmpassword charan">Confirm password</p>
+      <p class="forget_cfmpassword_input">
+        <i class="fa-solid fa-lock" style="color: #b8b8b8"></i
+        ><input
+          class="forget_password2"
+          type="password"
+          placeholder="Re-enter your password"
+          required
+        />
+        <i class="fa-solid fa-eye-slash" onclick="for_showpassword2()"></i>
+      </p>
+      <div class="reset_password" onclick="reset_pass()">RESET</div>
+
+      <div class="forget_sign" onclick="open_signup_page()">SIGN UP</div>
+    </div>
+    <script src="../js/login_page.js"></script>
+  </body>
+</html>

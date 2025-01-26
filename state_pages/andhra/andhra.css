@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+}
+.explore{
+    margin-top: 40%;
+}
+.bc{
+    width: 100px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.bc:hover{
+    width: 120px;
+    height: 30px;
+}
+.Heading{
+    color: white;
+    font-size: 90px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    left: 5%;
+    /* background-image: linear-gradient(to right,orange,brown); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-clip: text; */
+    /* color: transparent; */
+    /* border: 2px solid black; */
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .background-video video {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.state{
+    width: 100%;
+    height: 100%;
+    /* background-color: transparent; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("https://curlytales.com/wp-content/uploads/2017/02/konark-24.jpg"); */
+    background-size: cover;
+    background-size: 100% 100% 100% 100%;
+    flex-direction: row;
+    gap: 120px;
+    z-index: -1;
+}
+.slick_div{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black;  */
+    width:70%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.temple1{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.temple2{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.temple3{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.temple4{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.temple5{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.temple6{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.konark_temple{
+    height: 250px;
+    width: 300px;
+     /* border: 2px solid black;  */
+}
+.name{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+.slick-dots{
+    display: flex;
+    position: absolute;
+    /* bottom: 0px; */
+    top: 300px;
+    right: 45%;
+    gap: 30px;
+    color: white;
+}
+.slick-active{
+    color: brown;
+}
+li button{
+    display: none;
+} 
+.background-video video {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+  .cropped-video {
+    clip-path: inset(30% 30% 20% 50%); 
+  }
+.temple_image{
+    border-radius: 20px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+@media screen and (max-width:1200px) {
+    .temple2{
+        margin-top: 12%;
+    }
+    .temple3{
+        margin-top: 12%;
+    }
+    .temple4{
+        margin-top: 12%;
+    }
+    .temple5{
+        margin-top: 12%;
+    }
+    .temple6{
+        margin-top: 12%;
+    }
+}
